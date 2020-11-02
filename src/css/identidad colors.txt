@@ -1,0 +1,40 @@
+PRINCIPALES
+Rosa: 
+CMYK: 06 100 29 00
+RGB: 224 25 112
+#E01970
+
+Verde:
+CMYK: 60 03 36 00
+RGB: 99 190 178
+#63BEB2
+
+Gris
+CMYK: 65 58 57 37
+RGB: 77 77 77
+#4D4D4D
+
+COMPLEMENTARIOS
+Morado #5C2849
+Azul #2C4260
+Rosa2 #EC4863
+Amarillo #FFBE0C
+Verde1 #75CC8E
+Naranja #EF664B
+Vino #A73E5C
+Verde2 #87D6BC
+ 
+
+TIPOGRAFIA	
+Principal: Montserrat
+font-family: 'Montserrat', sans-serif;
+
+Secundaria: Barlow Condensed
+font-family: 'Barlow Condensed', sans-serif;
+
+CANDIDATOS: MONTSERRAT SEMIBOLD
+TÍTULOS: BARLOW CONDENSED BOLD
+SUBTÍTULOS: MONTSERRAT LIGHT
+TÍTULOS: BARLOW CONDENSED BOLD
+CUERPO DE TEXTO: MONTSERRAT
+
