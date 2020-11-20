@@ -9,6 +9,15 @@ body {
     /* color: #303030; */
     font-weight: 600;
     margin-bottom: 30px;
+    font: Montserrat, sans-serif;
+  }
+  h3{
+    text-transform: uppercase;
+    text-align: left;
+    flex: 80%;
+    padding-left: 5px;
+    font-family: Barlow, sans-serif;
+    /* letter-spacing: 2px; */
   }
   h4 {
     text-transform: uppercase;
@@ -41,27 +50,33 @@ body {
   .white-txt-color{
     color: #ffffff;
   }
-  .bg-grey {
-    /* background-color: #f6f6f6; */
-    background-color: #4D4D4D;
-  }
-  .bg-pink {
-    background-color: #E01970;
-  }
-  .bg-green {
-    background-color: #63BEB2;
-  }
-  .bg-yellow{
-    background-color: #FFBE0C !important;
-  }
   .bg-blue{
     background-color: #2C4260 !important;
   }
-  .bg-purple{
-    background-color: #5C2849 !important;
+  .bg-green {
+    background-color: #63BEB2 !important;
+  }
+  .bg-greens{
+    background-color: #75CC8E !important;
+  }
+  .bg-greent{
+    background-color: #87D6BC !important;
+  }
+  .bg-grey {
+    /* background-color: #f6f6f6; */
+    background-color: #4D4D4D !important;
+  }
+  .bg-pink {
+    background-color: #E01970 !important;
   }
   .bg-purple{
     background-color: #5C2849 !important;
+  }
+  .bg-softpink{
+    background-color: #EC4863 !important;
+  }
+  .bg-yellow{
+    background-color: #FFBE0C !important;
   }
   .logo-small {
     color: #ffffff;
@@ -87,6 +102,43 @@ body {
   .logo {
     color: #63BEB2;
     font-size: 200px;
+  }
+
+  .logo-candidato{
+    height: 55px;
+    width: auto;
+    /* display: block; */
+    object-fit: cover;
+    padding: 5px;
+    text-align: right;
+  }
+  .logo-amyleth {
+    background: url('your-image-url.jpg');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
+  }
+  .logo-alviso {
+    background: url('../img/logos/ddicon50x50.png');
+    height: 50px;
+    width: auto;
+    display: block;
+    /* Other styles here */
+  }
+  .logo-daniel {
+    background: url('../img/logos/ddicon.png');
+    height: 50px;
+    width: auto;
+    display: block;
+    /* Other styles here */
+  }
+  .logo-mariana {
+    background: url('your-image-url.jpg');
+    height: 20px;
+    width: 20px;
+    display: block;
+    /* Other styles here */
   }
   .thumbnail {
     padding: 0 0 15px 0;
@@ -118,10 +170,18 @@ body {
   .item span {
     font-style: normal;
   }
+  .equal{  
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: -60px;
+  }
   .panel {
-    /* border: 1px solid #63BEB2;  */
-    border-radius:0 !important;
+    border: 1px  transparent; 
+    /* border-radius:0 !important; */
     transition: box-shadow 0.5s;
+    height: 100%;
+    width: 100%;
   }
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
@@ -134,12 +194,22 @@ body {
   .panel-heading {
     color: #fff !important;
     /* background-color: #63BEB2 !important; */
-    padding: 25px;
-    /* border-bottom: 1px solid transparent; */
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom: 1px transparent;
+        border-bottom-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding-left: 20px;
+  }
+  /* .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+        border-bottom-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+} */
+  .panel-body{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   .panel-footer {
     background-color: white !important;
@@ -183,6 +253,26 @@ body {
     margin-bottom: 20px;
     color: #63BEB2;
   }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .htitle{
+    font-family: Montserrat, sans-serif;
+  }
+  .hsubtitle{
+    text-transform: uppercase;
+    font-family: Barlow, sans-serif;
+    /* text-align: left; */
+    flex: 80%;
+    /* padding-left: 5px; */
+    padding-bottom: -5px;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
   .slideanim {visibility:hidden;}
   .slide {
     animation-name: slide;
@@ -190,6 +280,45 @@ body {
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
+  }
+  /* Caption text */
+  .slides-text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  #myCarousel .carousel-inner .item img {
+    min-height: 50vh;
+    max-height: 70vh;
+    object-fit: cover;
+}
+  .carousel-inner img {
+    width: 100%;
+    /* Set width to 100% */
+    margin: auto;
+    /* max-height: 100vh; */
+    /* object-fit: inherit; */
+    background-size: cover;
+  }
+  .carousel-caption{
+    display: flex;
+  }
+  .carousel-caption h3 {
+      color: #fff !important;
+  }
+  .leftpanel{
+    /* float: left; */
+    display: inline;
+    flex: 50%;
+  }
+  .rightpanel{
+    float: right;
+    display: inline;
+    flex: 50%;
   }
   /* CARDS */
   .card-grid{
@@ -212,7 +341,7 @@ body {
   }
   .card-img{
     width: 100%;
-    height: 11vw;
+    /* height: 13.5vw; */
     object-fit: cover;
   }
   .card-content{
@@ -222,6 +351,7 @@ body {
   }
   .card-content-logo{
     flex: 20%;
+    text-align: center;
   }
   .card-content-text{
     text-transform: uppercase;
@@ -288,13 +418,66 @@ body {
   body {
     font: 400 1.5em/1.58 Montserrat, serif;
   }
-  h1,
-  p {
+  h1 {
     text-align: center;
   }
   .myGallery {
     font-size: 1rem;
   }
+
+  .dona-content{
+    width: 100%;
+    display: flex;
+  }
+  .dona-panelleft{
+    flex: 50%;
+    display: inline;
+    padding: 4rem;
+  }
+
+  .dona-panelright{
+    flex: 50%;
+    display: inline;
+    margin-top: -55px;
+    margin-bottom: -55px;
+  }
+
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .activaction, .collapsible:hover {
+    /* background-color: #555; */
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .activation:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
   /* end-my-galley */
   @keyframes slide {
     0% {
@@ -328,6 +511,10 @@ body {
     .container-fluid {
       padding: 60px 30px;
     }
+    
+    .equal{  
+      display: inline;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
@@ -355,16 +542,43 @@ body {
   /* Large devices (desktops, 992px and up) */
   @media (max-width: 992px) {
     .card-img {
-        height: 11vw;
+        /* height: 13.5vw; */
     }
     .container-fluid {
       padding: 60px 30px;
+    }
+    .dona-content{
+      width: 100%;
+      display: block;
+    }
+    .dona-panelleft{
+      flex: 100%;
+      display: block;
+      /* padding: 4rem; */
+    }
+  
+    .dona-panelright{
+      flex: 100%;
+      display: block;
+    }
+    .h2 {
+      font-size: 20px;
+      /* text-transform: uppercase;
+      font-weight: 600;
+      font: Montserrat, sans-serif; */
+    }
+    .h3{
+      font-size: 18px;
+      /* text-transform: uppercase;
+      text-align: left;
+      flex: 80%;
+      font-family: Barlow, sans-serif; */
     }
   }
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 992px) {
     .card-img {
-        height: 11vw;
+        height: 13.5vw;
     }
   }
   @media (max-width:736px ){
@@ -375,5 +589,8 @@ body {
       grid-auto-rows: auto;
       grid-gap: 1rem;
       padding-bottom: inherit;
+    }
+    .equal{
+      display: inline;
     }
   }

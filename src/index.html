@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src ./js/script.js https://facebook.com https://www.google.com/  https://docs.google.com/ https://twitter.com https://instagram.com https://stackpath.bootstrapcdn.com/ https://use.fontawesome.com https://fonts.googleapis.com/ https://ajax.googleapis.com https://maxcdn.bootstrapcdn.com; "> -->
     <title>El Futuro Florece</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -22,7 +24,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#myPage">Logo</a>
+            <a class="navbar-brand" href="#myPage"> 
+              <img src="./img/logos/horizontal_3.png" width=120px heigh= 80px alt="El Futuro Florece Logotipo" style="margin-top: -10px"/>
+            </a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
@@ -31,24 +35,15 @@
               <li><a href="#propuestas">NUESTRAS PROPUESTAS</a></li>
               <li><a href="#mapa">UBICA TU DISTRITO</a></li>
               <li><a href="#dona">DONA</a></li>
+              <li><a href="#auxiliares">AUXILIARES</a></li>
               <li><a href="#contact">CONECTA</a></li>
             </ul>
           </div>
         </div>
       </nav>
       
-      <div id="inicio" class="jumbotron text-center bg-green">
-        <h1>El Futuro Florece</h1> 
-        <p>We specialize in blablabla</p> 
-        <form>
-          <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-              <button type="button" class="btn btn-danger">Subscríbete</button>
-            </div>
-          </div>
-        </form>
-        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <div id="inicio" class="text-center bg-green">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -59,13 +54,61 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+              <div class="">
+                <img src="./img/activacion/cover1.JPG" alt="picture" style="width: 100%;">
+              </div>
+              <div class="carousel-caption text-right">
+                <div class="leftpanel">
+                  <div class="h2">El Futuro Florece es un espacio abierto y plural de organización comunitaria. </div>
+                <div class="h3">Fomentamos inclusividad, colaboración, y pedagogía política.</div>
+                </div>
+                <div class="rightpanel">
+                  <br>
+                </div>
+                <!-- <div class="rightpanel">
+                  <div class="htitle"><h3><b>Únete a nuestra campaña</b></h3></div>
+                  <div class="hsubtitle"><h3>Para recibir información y actualizaciones</h3></div>
+                <form>
+                  <div class="input-group">
+                    <input type="name" class="form-control" size="10" placeholder="Nombre" required>
+                    <input type="zipcode" class="form-control" size="10" placeholder="Código Postal" required>
+                    <input type="email" class="form-control" size="30" placeholder="Email" required>
+                    <div class="input-group-btn">
+                      <button type="button" class="btn btn-danger">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+                </div> -->
+              </div>
             </div>
             <div class="item">
-              <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+              <div class="">
+                <img src="./img/activacion/cover2.JPG" alt="picture" style="width: 100%;">
+              </div>
+              <div class="carousel-caption text-right">
+                <div class="leftpanel">
+                  <div class="h2">Impulsamos una política local, transparente y sin discriminación que surge desde y para la ciudadanía.</div>
+                  <!-- <h2>Impulsamos una política local, transparente y sin discriminación que surge desde y para la ciudadanía.</h3> -->
+                    <div class="h3">Creemos que ésta se debe apoyar en información y datos basados en ciencia y metodología.</div>
+                  <!-- <h3>Creemos que ésta se debe apoyar en información y datos basados en ciencia y metodología.</h3> -->
+                </div>
+                <div class="rightpanel">
+                </div>
+              </div>
             </div>
             <div class="item">
-              <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+              <div class="">
+                <img src="./img/activacion/cover3.JPG" alt="picture" style="width: 100%;">
+              </div>
+              <div class="carousel-caption text-right">
+                <div class="leftpanel">
+                  <div class="h2">Buscamos recuperar nuestras instituciones democráticas. </div>
+                <div class="h3">Queremos una democracia participativa, representativa y deliberativa que respete la dignidad de las personas.</div>
+                </div>
+                <div class="rightpanel">
+                  <br>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Left and right controls -->
@@ -86,87 +129,96 @@
           <h2>Conoce a nuestros candidatos</h2>
         </div>
         <div class="card-grid">
-            <div class="card">
-                <img class="card-img" src="https://i.pravatar.cc/250" alt="Avatar Mariana">
+            <div class="card bg-softpink">
+                <img class="card-img" src="./img/aspirantes/mvillasuso.jpg" alt="Avatar Mariana Villasuso">
                 <div class="card-content">
                   <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <!-- <span class="glyphicon glyphicon-certificate logo-small"></span> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
                   </div>
                   <div class="card-content-text">
                     <div class="card-content-text-header">
-                      <b>Mariana Algo</b>
+                      <b>Mariana Villasuso</b>
                     </div>
-                    Distrito A
+                    Distrito Local 3
                   </div>
                 </div>
             </div>
-            <div class="card bg-blue">
-                <img class="card-img" src="https://i.pravatar.cc/301" alt="Avatar Roberto">
+            <div class="card bg-purple">
+                <img class="card-img" src="./img/aspirantes/kmacias.jpg" alt="Avatar Kristian Macías">
                 <div class="card-content">
                   <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <!-- <span class="glyphicon glyphicon-certificate logo-small"></span> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+                  </div>
+                  <div class="card-content-text">
+                    <div class="card-content-text-header">
+                      <b>Kristian Macías</b>
+                    </div>
+                    Distrito Local 4
+                  </div>
+                </div>
+            </div>
+            <div class="card bg-green">
+                <img class="card-img" src="./img/aspirantes/ralviso.jpg" alt="Avatar Roberto Alviso">
+                <div class="card-content">
+                  <div class="card-content-logo">
+                    <!-- <span class="glyphicon glyphicon-certificate logo-small"></span> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+                    <!-- <span class="logo-alviso"></span> -->
                   </div>
                   <div class="card-content-text">
                     <div class="card-content-text-header">
                       <b>Roberto Alviso</b>
                     </div>
-                    Distrito B
+                    Distrito Local 6
                   </div>
                 </div>
             </div>
-            <div class="card bg-green">
-                <img class="card-img" src="https://i.pravatar.cc/302" alt="Avatar Daniel">
+            <div class="card bg-yellow">
+                <img class="card-img bg-pink" src="./img/aspirantes/dperez.jpg" alt="Avatar Daniel Dario">
                 <div class="card-content">
                   <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <!-- <img class="logo-candidato" src="./img/logos/ddicon.png" alt="Logo Daniel Dario"> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo Daniel Darío">
+                    <!-- <div class="logo-daniel"></div> -->
+                    <!-- <span class="logo-daniel"></span> -->
                   </div>
                   <div class="card-content-text">
                     <div class="card-content-text-header">
-                      <b>Daniel Perez</b>
+                      <b>Daniel Darío</b>
                     </div>
-                    Distrito C
+                    Distrito Local 12
                   </div>
                 </div>
             </div>
             <div class="card bg-pink">
-                <img class="card-img bg-pink" src="https://i.pravatar.cc/303" alt="Avatar Kristian">
+                <img class="card-img" src="./img/aspirantes/aplcs.jpg" alt="Avatar Amyleth Palacios">
                 <div class="card-content">
                   <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <!-- <span class="glyphicon glyphicon-certificate logo-small"></span> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
                   </div>
                   <div class="card-content-text">
                     <div class="card-content-text-header">
-                      <b>Kristian algo</b>
+                      <b>Amyleth Palacios</b>
                     </div>
-                    Distrito D
+                    Distrito Local 18
                   </div>
                 </div>
             </div>
-            <div class="card bg-purple">
-                <img class="card-img" src="https://i.pravatar.cc/305" alt="Avatar Samuel">
+            <div class="card bg-blue">
+                <img class="card-img" src="./img/aspirantes/sgzz.jpg" alt="Avatar Samuel González">
                 <div class="card-content">
                   <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <!-- <span class="glyphicon glyphicon-certificate logo-small"></span> -->
+                    <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
                   </div>
                   <div class="card-content-text">
                     <div class="card-content-text-header">
-                      <b>Samuel Gzz</b>
+                      <b>Samuel González</b>
                     </div>
-                    Distrito E
-                  </div>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img" src="https://i.pravatar.cc/120" alt="Avatar Empty">
-                <div class="card-content">
-                  <div class="card-content-logo">
-                    <span class="glyphicon glyphicon-certificate logo-small"></span>
-                  </div>
-                  <div class="card-content-text">
-                    <div class="card-content-text-header">
-                      <b>John Doe</b>
-                    </div>
-                    Distrito F
+                    Distrito Federal 6
                   </div>
                 </div>
             </div>
@@ -199,75 +251,104 @@
       <!-- Container (Pricing Section) -->
       <div id="propuestas" class="container-fluid bg-pink">
         <div class="text-left white-txt-color">
-          <h2>Conoce nuestras propuestas</h2>
+          <h2>Nuestras propuestas</h2>
         </div>
-        <div class="row slideanim">
+        <div class="row slideanim equal">
           <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
+            <div class="panel panel-default bg-blue">
               <div class="panel-heading bg-blue">
-                <h1>Propuesta 1</h1>
+                <h3><b>Vidas libres y dignas</b></h3>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="panel-body bg-blue white-txt-color">
+                <p>Es tiempo de dejar de vivir con miedo en nuestra propia ciudad - en nuestras propias casas. Tenemos que implementar estrategias completas de prevención del delito - que lidien con las causas de la violencia. Tenemos que combatir la pobreza alimentaria, la vulnerabilidad economica y la discriminación y así procurar nuestro bienestar economico y social para poder vivr sin violencia de ningun tipo.
+                </p>
               </div>
             </div>      
           </div>     
           <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
+            <div class="panel panel-default bg-purple">
               <div class="panel-heading bg-purple">
-                <h1>Propuesta 2</h1>
+                <h3><b>Instituciones para las personas</b></h3>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="panel-body bg-purple white-txt-color">
+                <p>Exigimos un gobierno abierto y transparente - un gobierno de vecinas y vecinos, no de partidos políticos, en donde las decisiones se tomen en comunidad y donde todas tengamos una voz. Exigimos un gobierno moderno, que use la tecnología para ser más accesible, más eficiente y más responsable. Exigimos un gobierno de personas y para las personas.</p>
               </div>
             </div>      
           </div>       
           <div class="col-sm-4 col-xs-12">
-            <div class="panel panel-default text-center">
+            <div class="panel panel-default bg-yellow">
               <div class="panel-heading bg-yellow">
-                <h1>Propuesta 3</h1>
+                <h3><b>Ciudad que florece</b></h3>
               </div>
-              <div class="panel-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="panel-body bg-yellow white-txt-color">
+                <p>Necesitamos una ciudad que sea habitable para todas las personas, en donde podamos vivir y movernos de forma cómoda y segura. Para eso necesitamos de vivienda a precios justos y bien ubicada. Necesitamos calles, banquetas y transporte público accesibles y de calidad. Necesitamos cuidar nuestras áreas verdes y poder respirar aire limpio.</p>
               </div>
             </div>      
           </div>    
         </div>
-      </div>
-      
-      <!-- Container (Services Section) -->
-      <div id="services" class="container-fluid text-center">
-        
-      </div>
-      
+      </div>      
       <!-- Container (Portfolio Section) -->
       <div id="mapa" class="container-fluid text-left">
-        <h2>Mapa</h2><br>
+        
+        <div class="text-left black-txt-color">
+          <h2>Ubica tu distrito</h2>
+        </div>
                      
         <div class="row text-center">
-          <iframe src="https://www.google.com/maps/d/embed?mid=1Y58dj0eifprOZxgg8gmxkxKTSJdqCzw7" width="100%" height="480"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1XM6iJADlREuRRuA8n6VEsBJi1lMK6Rkt" width="100%" height="480"></iframe>
         </div>
-        <!-- <div id="map">
-          <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfL8tLV1OnsW91NmRBuZKfjdNLAtr5-vg&callback=initMap&libraries=&v=weekly"
-            defer>
-          </script>
-          <script>
-            let map;
-    
-            function initMap() {
-              map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 25.7025121, lng: -100.302120},
-                zoom: 12.25,
-              });
-            }
-          </script> -->
       </div>
+
       <!-- Container (Portfolio Section) --> 
       <div id="dona" class="container-fluid text-left bg-yellow white-txt-color">
-        <h2>Dona</h2>
-
+        <div class="text-left white-txt-color">
+          <h2>CONTRIBUYE CON TU DONACIÓN</h2>
+        </div>
+        <!-- <div class="htitle"><h2><b>CONTRIBUYE CON TU DONACIÓN</b></h2></div> -->
+        <div class="dona-content">
+          <!-- <div class="leftpanel">
+            <p>
+              No somos ningún partido político, ni tampoco venimos apadrinados o con pactos. Somos un grupo cien por ciento ciudadano, conformado por vecinas y vecinos como tú, que están hartas de la política como siempre se ha jugado.
+              Por eso necesitamos de tu apoyo para hacerle frente a los políticos de siempre.
+            </p>
+            <div>
+              <h3><b>CONTÁCTANOS PARA DONAR</b></h3>
+              <a class="btn btn-light" target="_blank" href="https://api.whatsapp.com/send?phone=[52][8117941693]"><i class="fab fa-whatsapp-square fa-7x"></i></a>
+            </div>
+          </div>
+          <div class="rightpanel">
+            <img src="./img/activacion/unete.JPG" alt="picture" style="width: 30%;">
+          </div> -->
+          <div class="dona-panelleft">
+            <p>
+              No somos ningún partido político, ni tampoco venimos apadrinados o con pactos. Somos un grupo cien por ciento ciudadano, conformado por vecinas y vecinos como tú, que están hartas de la política como siempre se ha jugado.
+              Por eso necesitamos de tu apoyo para hacerle frente a los políticos de siempre.
+            </p>
+            <div style="text-align: center;">
+              <h3><b>CONTÁCTANOS PARA DONAR</b></h3>
+              <a class="btn btn-light" target="_blank" href="https://api.whatsapp.com/send?phone=[52][8117941693]"><i class="fab fa-whatsapp-square fa-7x"></i></a>
+            </div>
+          </div>
+          
+          <div class="dona-panelright">
+            <img src="./img/activacion/unete.JPG" alt="picture" style="width: 100%;">
+          </div>
+        </div>  
       </div>
+
+      
+      <!-- Container (AUXILIARES Section) -->
+      <div id="auxiliares" class="container-fluid">
+        <div class="text-left black-txt-color">
+          <h2>Auxiliares</h2>
+        </div>
+        <div class="row text-center">
+          <button class="collapsible"><span class="hsubtitle">¡Yo quiero ser auxiliar!</span></button>
+          <div class="content">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfLas0OFCGMaI24SdmO6b7rl8kPkY2y40gYjbj7ofCmIl-oYA/viewform?embedded=true" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+        </div>
+      </div> 
       
       <!-- Container (Contact Section) -->
       <div id="contact" class="container-fluid bg-grey text-left white-txt-color">
@@ -275,55 +356,56 @@
         <br>
         <div class="row slideanim">
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>Personita 1</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <h4>Mariana Villasuso</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/Villasuso2021"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/mvillasuso"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/villasuso2021/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>Personita 2</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <h4>Kristian Macías</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/kristianmaciasf"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/kristianmaciasf"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/kristianmaciasf/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-lock logo-small"></span>
-            <h4>Personita 3</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <h4>Roberto Alviso</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/robalviso"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/robalviso"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/robalviso/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
         </div>
         <br><br>
         <div class="row slideanim">
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>Personita 4</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <h4>Daniel Darío</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/danieldarionl"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/danieldarionl"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/danieldarionl/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>Personita 5</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <!-- <span class="glyphicon glyphicon-wrench logo-small"></span> -->
+            <h4>Amyleth Palacios</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/amylethpm"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/amylethpm"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/amylethpalacios/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
           <div class="col-sm-4">
-            <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4>Personita 6</h4>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-facebook-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-twitter-square fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-            <a class="btn btn-light btn-social" href="#!"><i class="fab fa-youtube fa-lg"></i></a>
+            <img class="logo-candidato" src="./img/logos/efficon512.png" alt="Logo EFF">
+            <h4>Samuel González</h4>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.facebook.com/SamGonzalezNL"><i class="fab fa-facebook-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://twitter.com/samgonzaleznl"><i class="fab fa-twitter-square fa-lg"></i></a>
+            <a class="btn btn-light btn-social" target="_blank" href="https://www.instagram.com/samgonzaleznl/"><i class="fab fa-instagram fa-lg"></i></a>
+            <!-- <a class="btn btn-light btn-social" target="_blank" href="#!"><i class="fab fa-youtube fa-lg"></i></a> -->
           </div>
         </div>
       </div>
@@ -338,6 +420,6 @@
         <p>El Futuro Florece</p>
       </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" nonce="r@nd0m"></script>
 </body>
 </html>
